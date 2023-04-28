@@ -1,0 +1,63 @@
+.popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width: 500px;
+    padding: 5px;
+}
+
+.popup-arrow {
+    color: rgb(255, 255, 255);
+}
+
+[role='tooltip'].popup-content {
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup='tooltip'].popup-overlay {
+    background: transparent;
+}
+
+
+/* .loader-popup-content {
+    margin: auto;
+    background: rgb(255, 255, 255);
+    width:64px important;
+    padding:64px;
+  }
+  
+  
+  
+  .loader-container {
+    width: 64px;
+    height: 64px; 
+    float: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 1;
+  }
+  
+  .spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    float: center;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+  }
+  
+  @keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  } */
