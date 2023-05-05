@@ -16,7 +16,7 @@ import Collection from "../collection/Collection";
 import { Nfts } from "../nfts/Nfts";
 import {Brand} from "../brand/Brand"
 
-export default function Globla() {
+export default function Global() {
   return (
     <Router>
       <div>

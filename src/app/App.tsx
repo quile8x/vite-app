@@ -13,7 +13,7 @@ import { EthComponentsSettingsContext, IEthComponentsSettings } from 'eth-compon
  */
 // const MainPage = lazy(() => import('./routes/main/Main'));
 // const AdminPage = lazy(() => import('./routes/admin/Admin'));
-//const GlobalPage = lazy(() => import('./routes/global/Global'));
+const GlobalPage = lazy(() => import('./routes/global/Global'));
 
 console.log('load app');
 
