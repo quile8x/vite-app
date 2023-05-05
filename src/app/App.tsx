@@ -6,14 +6,14 @@ import { BLOCKNATIVE_DAPPID } from '~~/models/constants/constants';
 import { subgraphUri } from '~~/config/subgraphConfig';
 import { EthersAppContext } from 'eth-hooks/context';
 import { EthComponentsSettingsContext, IEthComponentsSettings } from 'eth-components/models';
-import cfg from '../../config-env';
+//import cfg from '../../config-env';
 
 /**
  * See MainPage.tsx for main app component
  */
 // const MainPage = lazy(() => import('./routes/main/Main'));
 // const AdminPage = lazy(() => import('./routes/admin/Admin'));
-const GlobalPage = lazy(() => import('./routes/global/Global'));
+//const GlobalPage = lazy(() => import('./routes/global/Global'));
 
 console.log('load app');
 
