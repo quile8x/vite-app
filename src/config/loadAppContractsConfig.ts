@@ -8,7 +8,7 @@ const contractListJsonPromise = import('../generated/contracts/hardhat_contracts
 /**
  * - run yarn compile and yarn deploy to generate hardhhat_contracts.json
  */
-const externalContractsPromise = import('../generated/contracts/external_contracts');
+//const externalContractsPromise = import('../generated/contracts/external_contracts');
 
 /**
  * LoadsAppContracts
@@ -29,11 +29,11 @@ export const loadAppContractsConfig = async (): Promise<TContractLoaderConfig> =
     );
   }
 
-  try {
-    config.externalContracts = ((await externalContractsPromise).default ?? {}) as unknown as TExternalContracts;
-  } catch {
-    config.externalContracts = undefined;
-    console.error('😶 No external contracts file found: /generated/contracts/external_contracts');
-  }
+  // try {
+  //   config.externalContracts = ((await externalContractsPromise).default ?? {}) as unknown as TExternalContracts;
+  // } catch {
+  //   config.externalContracts = undefined;
+  //   console.error('😶 No external contracts file found: /generated/contracts/external_contracts');
+  // }
   return config;
 };
