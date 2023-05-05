@@ -28,7 +28,8 @@ import ReactLoading from 'react-loading';
 //import LoadingOverlay from 'react-loading-overlay';
 import LoadingOverlay from 'react-loading-overlay-ts';
 
-import "~~/styles/css/my-popup.css";
+import '../../../styles/css/my-popup.css'
+//import "../../ styles/css/my-popup.css";
 import axios from 'axios';
 
 import contractAddress from "../../../generated/contracts/contract-address.json";
