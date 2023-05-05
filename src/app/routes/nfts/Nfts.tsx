@@ -8,8 +8,10 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
-import { YourCollectible } from '~~/generated/contract-types';
-import { useAppContracts } from '~~/app/routes/main/hooks/useAppContracts';
+
+
+import { YourCollectible } from '../../../generated/contract-types';
+import { useAppContracts } from '../../../app/routes/main/hooks/useAppContracts';
 import { useContractLoader, useContractReader } from 'eth-hooks';
 import { useEthersContext } from 'eth-hooks/context';
 import { BigNumber, ethers } from 'ethers';
@@ -29,8 +31,9 @@ import LoadingOverlay from 'react-loading-overlay-ts';
 import "~~/styles/css/my-popup.css";
 import axios from 'axios';
 
-import contractAddress from "~~/generated/contracts/contract-address.json";
-import CMArtifact from "~~/generated/contracts/CM.json";
+import contractAddress from "../../../generated/contracts/contract-address.json";
+import CMArtifact from '../../../generated/contracts/CM.json'
+//import CMArtifact from "~~/generated/contracts/CM.json";
 
 export interface IYourCollectibleProps {
   mainnetProvider: StaticJsonRpcProvider;
