@@ -71,7 +71,7 @@ export default defineConfig({
   },
   server: {
     host: true,
-    port: 80,
+    port: 443,
     watch: {
       followSymlinks: true,
     },
