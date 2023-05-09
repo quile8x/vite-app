@@ -9,7 +9,7 @@ import { create } from 'ipfs-http-client';
 import { Button, Card, List } from 'antd';
 import { Address, AddressInput } from 'eth-components/ant';
 import { TTransactor } from 'eth-components/functions';
-import { mintJson } from './mint';
+import { Buffer } from 'buffer';
 
 
 import React from "react";

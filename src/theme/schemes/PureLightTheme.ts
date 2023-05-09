@@ -993,153 +993,153 @@ export const PureLightTheme = createTheme({
         }
       }
     },
-    MuiTimelineDot: {
-      styleOverrides: {
-        root: {
-          margin: 0,
-          zIndex: 5,
-          position: 'absolute',
-          top: '50%',
-          marginTop: -6,
-          left: -6
-        },
-        outlined: {
-          backgroundColor: colors.alpha.white[100],
-          boxShadow: '0 0 0 6px ' + colors.alpha.white[100]
-        },
-        outlinedPrimary: {
-          backgroundColor: colors.alpha.white[100],
-          boxShadow: '0 0 0 6px ' + colors.alpha.white[100]
-        }
-      }
-    },
-    MuiTimelineConnector: {
-      styleOverrides: {
-        root: {
-          position: 'absolute',
-          height: '100%',
-          top: 0,
-          borderRadius: 50,
-          backgroundColor: colors.alpha.black[10]
-        }
-      }
-    },
-    MuiTimelineItem: {
-      styleOverrides: {
-        root: {
-          minHeight: 0,
-          padding: '8px 0',
+    // MuiTimelineDot: {
+    //   styleOverrides: {
+    //     root: {
+    //       margin: 0,
+    //       zIndex: 5,
+    //       position: 'absolute',
+    //       top: '50%',
+    //       marginTop: -6,
+    //       left: -6
+    //     },
+    //     outlined: {
+    //       backgroundColor: colors.alpha.white[100],
+    //       boxShadow: '0 0 0 6px ' + colors.alpha.white[100]
+    //     },
+    //     outlinedPrimary: {
+    //       backgroundColor: colors.alpha.white[100],
+    //       boxShadow: '0 0 0 6px ' + colors.alpha.white[100]
+    //     }
+    //   }
+    // },
+    // MuiTimelineConnector: {
+    //   styleOverrides: {
+    //     root: {
+    //       position: 'absolute',
+    //       height: '100%',
+    //       top: 0,
+    //       borderRadius: 50,
+    //       backgroundColor: colors.alpha.black[10]
+    //     }
+    //   }
+    // },
+    // MuiTimelineItem: {
+    //   styleOverrides: {
+    //     root: {
+    //       minHeight: 0,
+    //       padding: '8px 0',
 
-          '&:before': {
-            display: 'none'
-          }
-        },
-        missingOppositeContent: {
-          '&:before': {
-            display: 'none'
-          }
-        }
-      }
-    },
-    MuiTooltip: {
-      styleOverrides: {
-        tooltip: {
-          backgroundColor: alpha(colors.alpha.black['100'], 0.95),
-          padding: '8px 16px',
-          fontSize: 13
-        },
-        arrow: {
-          color: alpha(colors.alpha.black['100'], 0.95)
-        }
-      }
-    },
-    MuiSwitch: {
-      styleOverrides: {
-        root: {
-          height: 33,
-          overflow: 'visible',
+    //       '&:before': {
+    //         display: 'none'
+    //       }
+    //     },
+    //     missingOppositeContent: {
+    //       '&:before': {
+    //         display: 'none'
+    //       }
+    //     }
+    //   }
+    // },
+    // MuiTooltip: {
+    //   styleOverrides: {
+    //     tooltip: {
+    //       backgroundColor: alpha(colors.alpha.black['100'], 0.95),
+    //       padding: '8px 16px',
+    //       fontSize: 13
+    //     },
+    //     arrow: {
+    //       color: alpha(colors.alpha.black['100'], 0.95)
+    //     }
+    //   }
+    // },
+    // MuiSwitch: {
+    //   styleOverrides: {
+    //     root: {
+    //       height: 33,
+    //       overflow: 'visible',
 
-          '& .MuiButtonBase-root': {
-            position: 'absolute',
-            padding: 6,
-            transition:
-              'left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms'
-          },
-          '& .MuiIconButton-root': {
-            borderRadius: 100
-          },
-          '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-            opacity: 0.3
-          }
-        },
-        thumb: {
-          border: '1px solid ' + colors.alpha.black[30],
-          boxShadow:
-            '0px 9px 14px ' +
-            colors.alpha.black[10] +
-            ', 0px 2px 2px ' +
-            colors.alpha.black[10]
-        },
-        track: {
-          backgroundColor: colors.alpha.black[5],
-          border: '1px solid ' + colors.alpha.black[10],
-          boxShadow: 'inset 0px 1px 1px ' + colors.alpha.black[10],
-          opacity: 1
-        },
-        colorPrimary: {
-          '& .MuiSwitch-thumb': {
-            backgroundColor: colors.alpha.white[100]
-          },
+    //       '& .MuiButtonBase-root': {
+    //         position: 'absolute',
+    //         padding: 6,
+    //         transition:
+    //           'left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms'
+    //       },
+    //       '& .MuiIconButton-root': {
+    //         borderRadius: 100
+    //       },
+    //       '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+    //         opacity: 0.3
+    //       }
+    //     },
+    //     thumb: {
+    //       border: '1px solid ' + colors.alpha.black[30],
+    //       boxShadow:
+    //         '0px 9px 14px ' +
+    //         colors.alpha.black[10] +
+    //         ', 0px 2px 2px ' +
+    //         colors.alpha.black[10]
+    //     },
+    //     track: {
+    //       backgroundColor: colors.alpha.black[5],
+    //       border: '1px solid ' + colors.alpha.black[10],
+    //       boxShadow: 'inset 0px 1px 1px ' + colors.alpha.black[10],
+    //       opacity: 1
+    //     },
+    //     colorPrimary: {
+    //       '& .MuiSwitch-thumb': {
+    //         backgroundColor: colors.alpha.white[100]
+    //       },
 
-          '&.Mui-checked .MuiSwitch-thumb': {
-            backgroundColor: colors.primary.main
-          }
-        }
-      }
-    },
-    MuiStepper: {
-      styleOverrides: {
-        root: {
-          paddingTop: 20,
-          paddingBottom: 20,
-          background: colors.alpha.black[5]
-        }
-      }
-    },
-    MuiStepIcon: {
-      styleOverrides: {
-        root: {
-          '&.MuiStepIcon-completed': {
-            color: colors.success.main
-          }
-        }
-      }
-    },
-    MuiTypography: {
-      defaultProps: {
-        variantMapping: {
-          h1: 'h1',
-          h2: 'h2',
-          h3: 'div',
-          h4: 'div',
-          h5: 'div',
-          h6: 'div',
-          subtitle1: 'div',
-          subtitle2: 'div',
-          body1: 'div',
-          body2: 'div'
-        }
-      },
-      styleOverrides: {
-        gutterBottom: {
-          marginBottom: 4
-        },
-        paragraph: {
-          fontSize: 17,
-          lineHeight: 1.7
-        }
-      }
-    }
+    //       '&.Mui-checked .MuiSwitch-thumb': {
+    //         backgroundColor: colors.primary.main
+    //       }
+    //     }
+    //   }
+    // },
+    // MuiStepper: {
+    //   styleOverrides: {
+    //     root: {
+    //       paddingTop: 20,
+    //       paddingBottom: 20,
+    //       background: colors.alpha.black[5]
+    //     }
+    //   }
+    // },
+    // MuiStepIcon: {
+    //   styleOverrides: {
+    //     root: {
+    //       '&.MuiStepIcon-completed': {
+    //         color: colors.success.main
+    //       }
+    //     }
+    //   }
+    // },
+    // MuiTypography: {
+    //   defaultProps: {
+    //     variantMapping: {
+    //       h1: 'h1',
+    //       h2: 'h2',
+    //       h3: 'div',
+    //       h4: 'div',
+    //       h5: 'div',
+    //       h6: 'div',
+    //       subtitle1: 'div',
+    //       subtitle2: 'div',
+    //       body1: 'div',
+    //       body2: 'div'
+    //     }
+    //   },
+    //   styleOverrides: {
+    //     gutterBottom: {
+    //       marginBottom: 4
+    //     },
+    //     paragraph: {
+    //       fontSize: 17,
+    //       lineHeight: 1.7
+    //     }
+    //   }
+    // }
   },
   shape: {
     borderRadius: 10

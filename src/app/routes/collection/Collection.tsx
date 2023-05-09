@@ -4,6 +4,7 @@ import { create } from 'ipfs-http-client';
 import { Button, Card, List, } from 'antd';
 import axios from 'axios';
 import Modal from 'react-modal';
+import { Buffer } from 'buffer';
 
 import 'reactjs-popup/dist/index.css';
 import "~~/styles/css/my-popup.css";

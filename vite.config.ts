@@ -6,6 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import path, { resolve } from 'path';
 import { viteExternalsPlugin } from 'vite-plugin-externals';
 import react from "@vitejs/plugin-react";
+import { sentryVitePlugin } from "@sentry/vite-plugin";
 
 const isDev = process.env.NODE_ENV == 'development';
 console.log('env.dev:', process.env.ENVIRONMENT, ' isDev:', isDev);
@@ -36,7 +37,26 @@ const processEnvValues = {
 console.log("=============", processEnvValues);
 
 export default defineConfig({
-  plugins: [reactPlugin(), macrosPlugin(), tsconfigPaths(), externals],
+  plugins: [reactPlugin(), macrosPlugin(), tsconfigPaths(), externals,
+    sentryVitePlugin({
+      org: "home-7wi",
+      project: "vite-app",
+      // Auth tokens can be obtained from https://sentry.io/settings/account/api/auth-tokens/
+      // and need `project:releases` and `org:read` scopes
+      authToken: "a0656570151e436690b39acdf42e59b81ba7c2942400494a94fd9cb3f39d8509",
+
+      sourcemaps: {
+        // Specify the directory containing build artifacts
+        assets: "./dist/**",
+      },
+
+      // Use the following option if you're on an SDK version lower than 7.47.0:
+      // include: "./dist",
+
+      // Optionally uncomment the line below to override automatic release name detection
+      // release: env.RELEASE,
+    }),
+  ],
   build: {
     commonjsOptions: {
       include: /node_modules/,
@@ -52,7 +72,7 @@ export default defineConfig({
     jsxFactory: 'jsx',
     jsxInject: `import {jsx, css} from '@emotion/react'`,
   },
-  define: processEnvValues,
+  define: {},
   optimizeDeps: {
     exclude: ['@apollo/client', `graphql`],
   },
@@ -67,10 +87,11 @@ export default defineConfig({
       https: 'http-browserify',
       timers: 'timers-browserify',
       process: 'process',
+      web3: 'web3/dist/web3.min.js'
     },
   },
   server: {
-    host: true,
+    //host: true,
     watch: {
       followSymlinks: true,
     },

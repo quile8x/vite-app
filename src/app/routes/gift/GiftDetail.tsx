@@ -9,6 +9,7 @@ import { create } from 'ipfs-http-client';
 import { Button, Card, List, } from 'antd';
 import { Address, AddressInput } from 'eth-components/ant';
 import { TTransactor } from 'eth-components/functions';
+import { Buffer } from 'buffer';
 
 import React from "react";
 //import { Route, Routes, useNavigate } from 'react-router-dom';

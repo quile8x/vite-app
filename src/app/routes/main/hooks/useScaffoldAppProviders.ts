@@ -49,7 +49,7 @@ export const useScaffoldProviders = (): IScaffoldAppProviders => {
   useEffect(() => {
     if (!ethersContext.active && createLoginConnector) {
       const connector = createLoginConnector();
-      if (connector) ethersContext.activate(connector);
+      //if (connector) ethersContext.activate(connector);
     }
   }, [web3Config]);
 

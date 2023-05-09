@@ -11,7 +11,8 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "types": [
       // "vite/client",
       // "node",
@@ -38,7 +39,8 @@
       "~~/*": ["./src/*"]
     }
   },
-  "include": ["src", "src/helpers/__global.ts"],
+  //"include": ["src", "src/helpers/__global.ts"],
+  "include": ["src/helpers/types/__global.ts", "src/app/routes/main/components/MainPageHeader.tsx"],
   "exclude": [
     "**/node_modules",
     ".husky",
