@@ -16,8 +16,8 @@ import "~~/styles/css/my-popup.css";
 import '~~/styles/main-page.css';
 import '~~/styles/themes/light-theme.less'
 
-const projectId = "2GajDLTC6y04qsYsoDRq9nGmWwK";
-const projectSecret = "48c62c6b3f82d2ecfa2cbe4c90f97037";;
+const projectId = "";
+const projectSecret = "";;
 const projectIdAndSecret = `${projectId}:${projectSecret}`;
 
 const optionsNames = ['Contract One', 'Contract Two', 'Contract Three'];

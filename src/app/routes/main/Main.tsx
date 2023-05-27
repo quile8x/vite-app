@@ -88,13 +88,16 @@ export const Main: FC = () => {
   const tx = transactor(ethComponentsSettings, ethersContext?.signer, gasPrice);
 
   const [route, setRoute] = useState<string>('');
+  const [userWalletAddress, setUserWalletAddress] = useState(undefined);
+
+
   useEffect(() => {
     setRoute(window.location.pathname);
   }, [setRoute]);
 
   return (
     <div className="App">
-      <MainPageHeader scaffoldAppProviders={scaffoldAppProviders} price={ethPrice} />
+      <MainPageHeader scaffoldAppProviders={scaffoldAppProviders} price={ethPrice}  userWalletAddress={userWalletAddress}  setUserWalletAddress = {setUserWalletAddress} />
 
       {/* Routes should be added between the <Switch> </Switch> as seen below */}
       <BrowserRouter>
@@ -120,6 +123,8 @@ export const Main: FC = () => {
               mainnetProvider={scaffoldAppProviders.mainnetProvider}
               blockExplorer={scaffoldAppProviders.targetNetwork.blockExplorer}
               tx={tx}
+              userWalletAddress = {userWalletAddress} 
+              setUserWalletAddress = {setUserWalletAddress} 
             />
           </Route>
           <Route exact path="/nft-detail/:addressContract/:tokenID">
